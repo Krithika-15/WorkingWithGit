@@ -77,13 +77,13 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="778.0000000000001,1290.5" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="522,1405" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap2010:Annotation.AnnotationText="A sequence for checking if the year is a Leap Year or not using an if statement" DisplayName="Leap year using If" sap:VirtualizedContainerService.HintSize="522,1267.5" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap2010:Annotation.AnnotationText="A sequence for checking if the year is a Leap Year or not using an if statement" DisplayName="Leap year using If" sap:VirtualizedContainerService.HintSize="522,1382" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Int32" Name="Year" />
         <Variable x:TypeArguments="x:Boolean" Name="IsLeapYear" />
@@ -94,20 +94,21 @@
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Executes a specified part of the automation while the condition is met. When the specified condition is no longer met, the project exits the loop." Condition="[not IsLeapYear]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="488,1153.5" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Executes a specified part of the automation while the condition is met. When the specified condition is no longer met, the project exits the loop." Condition="[not IsLeapYear]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="488,1268" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
         <ui:InterruptibleDoWhile.Body>
-          <Sequence DisplayName="Check if leap year" sap:VirtualizedContainerService.HintSize="486,986.5" sap2010:WorkflowViewState.IdRef="Sequence_9">
+          <Sequence DisplayName="Check if leap year" sap:VirtualizedContainerService.HintSize="486,1101" sap2010:WorkflowViewState.IdRef="Sequence_9">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="452,118.5" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Learning GIT using this project&quot;]" />
             <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input year" sap:VirtualizedContainerService.HintSize="452,277" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Please enter a Year" Title="Year Dialog" TopMost="False">
               <ui:InputDialog.Result>
                 <OutArgument x:TypeArguments="x:Int32">[Year]</OutArgument>
               </ui:InputDialog.Result>
             </ui:InputDialog>
-            <Assign sap:VirtualizedContainerService.HintSize="452,180" sap2010:WorkflowViewState.IdRef="Assign_1">
+            <Assign sap:VirtualizedContainerService.HintSize="452,176" sap2010:WorkflowViewState.IdRef="Assign_1">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Boolean">[IsLeapYear]</OutArgument>
               </Assign.To>
